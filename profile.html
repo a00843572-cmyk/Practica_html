@@ -3,63 +3,137 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Mi perfil</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Archivo CSS propio -->
+    <link rel="stylesheet"
+          href="styles.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Mi perfil</h1>
-    </header>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        |
-        <a href="tags.html">Etiquetas</a>
-        |
-        <a href="profile.html">Perfil</a>
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+                Mi sitio
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="menu">
+
+                <div class="navbar-nav">
+
+                    <a class="nav-link"
+                       href="index.html">
+                        Inicio
+                    </a>
+
+                    <a class="nav-link"
+                       href="tags.html">
+                        Etiquetas
+                    </a>
+
+                    <a class="nav-link active"
+                       href="profile.html">
+                        Perfil
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </nav>
 
-    <div>
 
-        <h2>Datos personales</h2>
+    <div class="container contenido">
 
-        <p>
-            <strong>Nombre:</strong>
-            Valentina Merida
-        </p>
+        <div class="row align-items-center">
 
-        <p>
-            <strong>Edad:</strong>
-            20 años
-        </p>
+            <!-- Foto -->
+            <div class="col-md-4 text-center">
 
-        <p>
-            <strong>Carrera:</strong>
-            ITC
-        </p>
+                <img
+                    src="foto.jpg"
+                    alt="Foto de perfil"
+                    width="220"
+                    class="img-fluid">
 
-        <p>
-            <strong>Ciudad:</strong>
-            Monterrey, Nuevo Leon
-        </p>
+            </div>
 
-        <h2>Sobre mí</h2>
 
-        <p>
-            Soy estudiante en el Tec de Monterrey y vine
-            desde Bolvia a expandir mis conocimientos
-            y aprender mas de mi entorno.
-        </p>
+            <!-- Datos -->
+            <div class="col-md-8">
 
-        <h2>Mi foto</h2>
+                <h1>Mi perfil</h1>
 
-        <img
-            src="foto.jpg"
-            alt="Foto de perfil"
-            width="200">
+                <h2>Datos personales</h2>
+
+                <p>
+                    <strong>Nombre:</strong>
+                    Valentina Merida
+                </p>
+
+                <p>
+                    <strong>Edad:</strong>
+                    20 años
+                </p>
+
+                <p>
+                    <strong>Carrera:</strong>
+                    ITC
+                </p>
+
+                <p>
+                    <strong>Ciudad:</strong>
+                    Monterrey, Nuevo Leon
+                </p>
+
+                <h2>Sobre mí</h2>
+
+                <p class="texto-destacado">
+                    Soy estudiante en el Tec de Monterrey y vine
+                    desde Bolivia a expandir mis conocimientos
+                    y aprender más de mi entorno.
+                </p>
+
+                <p id="parrafo-especial">
+                    Actualmente estoy aprendiendo HTML, CSS y Bootstrap.
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 

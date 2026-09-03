@@ -1,0 +1,77 @@
+/* Estilos generales de la pagina */
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Estilo para todos los titulos h1 */
+
+h1 {
+    color: #1f4e79;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Estilo para todos los parrafos */
+
+p {
+    color: #333333;
+}
+
+
+/* Clase para algunos parrafos */
+
+.texto-destacado {
+    color: #0d6efd;
+}
+
+
+/* ID para un parrafo en particular */
+
+#parrafo-especial {
+    color: #198754;
+}
+
+
+/* Todas las imagenes seran circulares */
+
+img {
+    border-radius: 50%;
+}
+
+
+/* Espacio para el contenido */
+
+.contenido {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Caja del formulario de login */
+
+.login {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+/* Espacio debajo de la barra de navegacion */
+
+nav {
+    margin-bottom: 20px;
+}
+
+
+/* Espacio dentro del login */
+
+.login h1 {
+    margin-bottom: 20px;
+}

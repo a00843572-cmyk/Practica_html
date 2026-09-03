@@ -2,34 +2,95 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
     <title>Etiquetas HTML</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Mi CSS -->
+    <link rel="stylesheet"
+          href="styles.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Etiquetas HTML</h1>
-    </header>
+    <!-- Barra de navegacion -->
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        |
-        <a href="tags.html">Etiquetas</a>
-        |
-        <a href="profile.html">Perfil</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+
+            <a class="navbar-brand"
+               href="index.html">
+                Mi sitio
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse"
+                 id="menu">
+
+                <div class="navbar-nav">
+
+                    <a class="nav-link"
+                       href="index.html">
+                        Inicio
+                    </a>
+
+                    <a class="nav-link active"
+                       href="tags.html">
+                        Etiquetas
+                    </a>
+
+                    <a class="nav-link"
+                       href="profile.html">
+                        Perfil
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </nav>
 
-    <div>
 
-        <h2>Ejemplos de etiquetas</h2>
+    <div class="container contenido">
+
+        <h1>Etiquetas HTML</h1>
 
         <p>
-            Esta página contiene diferentes etiquetas HTML.
+            En esta página se muestran algunos
+            ejemplos de etiquetas de HTML.
+        </p>
+
+        <p class="texto-destacado">
+            Este párrafo utiliza una clase de CSS.
+        </p>
+
+        <p id="parrafo-especial">
+            Este párrafo utiliza un ID para cambiar
+            su color.
         </p>
 
         <p>
-            Este texto tiene una palabra en
+            Este texto contiene una palabra en
             <strong>negrita</strong>.
         </p>
 
@@ -50,17 +111,22 @@
         </p>
 
         <p>
-            <a href="https://github.com">
+            <a href="https://github.com"
+               class="btn btn-outline-primary">
                 Ir a GitHub
             </a>
         </p>
 
-        <img
-            src="foto.jpg"
-            alt="Imagen de ejemplo"
-            width="200">
+        <img src="foto.jpg"
+             alt="Imagen"
+             width="200"
+             class="img-fluid">
 
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 
